@@ -1,0 +1,63 @@
+/* CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdb;
+    color:#24363a;
+    padding: 200px;
+    text-align: center;
+}
+
+/* 按鈕樣式 */
+
+button {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #FFFFFF;
+color: #222222;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#openMapButton {
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    border-radius: 5px;
+    bottom: 50px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    background-color: #222222;
+                
+}
+
+/*Div*/
+
+#imgDiv{
+    position:absolute;
+    
+    left: 50%;
+    margin-left: -150px;
+
+    top: 50%;
+    margin-top: -175px;
+    
+    width: 300px;
+    height: 350px;
+    background-color: #ff000000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;  
+}

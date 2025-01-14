@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>數位松鼠線上追思會</title>
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+    <body>  
+ 
+     數位松鼠線上追思會
+
+     <BR>
+        
+    <button id="openmapButton" onclick="alert('您已上香！')">上香</button>
+     <div id="imgDiv">
+        <img src="./centerImg.jpeg">
+    </div>
+    <script src="./js/index.js"></script>
+
+     <script>
+            // 宣告變數
+            let name = "Alice"; // 可以更改
+            const age = 25;     // 不可更改
+            var city = "Taipei"; // 可更改 (舊方式)
+
+            // 顯示在控制台
+            console.log("Name:", name);
+            console.log("Age:", age);
+            console.log("City:", city);
+
+            name ="May";
+            console.log("Name",name);
+
+            greet("Marry");
+            greet(name);
+            greet("Jerromy");
+
+            function greet(who){
+                console.log ("HI," + who + "!");
+            }
+
+            function gopage(){
+                window.location.href = "";
+            }
+
+     </script>
+      
+    </body>
+</html>
