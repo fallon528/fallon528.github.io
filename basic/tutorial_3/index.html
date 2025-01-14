@@ -3,22 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>數位松鼠偵查</title>
+        <title>結果</title>
         <link rel="stylesheet" href="./css/main.css">
-
+        <script src="./js/qrcode.js"></script>
     </head>
     <body>
-        數位松鼠偵查
+        成功追查松鼠!
 
         <BR>
         
-        <div id="imgDiv">
-            <img src="./images/centerImg.jpg">
-        </div>
+        <div id="qrcode"></div>
+
         
-        <button id="openMapButton">開啟地圖</button>
+        <button id="returnHomeButton" onclick="goPage()">返回首頁</button>
 
         <script src="./js/index.js"></script>
-        
     </body>
 </html>

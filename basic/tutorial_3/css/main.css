@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #c5c4c4;
     color: #000000;
     text-align: center;
 }
 
 
-#openMapButton {
+#returnHomeButton {
     position: absolute;
     width: 200px;
     margin-left: -100px;
@@ -15,8 +15,8 @@ body {
     padding: 10px;
     cursor: pointer;
     border: none;
-    color: #FFFFFF;
-    background-color: #222222;
+    color: #f1eded;
+    background-color: #2e2d2d;
     
 }
 
@@ -34,9 +34,17 @@ body {
     /* background-color: red; */
 }
 
-img {
+#centerimg {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+#qrcode {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -128px;
+    margin-top: -128px;
 }
