@@ -1,32 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    
-}
-
-#map { 
-    height: 300px; 
-}
-
 #info {
     width: 100%;
-    background-color: white;
+    background-color: rgb(202, 202, 202);
     height: 200px;
 }
 
-#openCameraButton {
-    position: absolute;
-    width: 200px;
-    left: 50%;
-    margin-left: -100px;
-    border-radius: 5px;
-    bottom: 10px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(220, 219, 219);
+}
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+#map {
+    width: 800px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+#description {
+    width: 800px;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
     padding: 10px;
-    cursor: pointer;
+    text-align: center;
+}
+#description h2, #description h3, #description p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+#openCameraButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
-    color: #FFFFFF;
-    background-color: #222222;
-    
+    border-radius: 5px;
+    background-color: #2e2f30;
+    color: white;
+    cursor: pointer;
+}
+#openCameraButton:hover {
+    background-color: #2e2f30;
 }

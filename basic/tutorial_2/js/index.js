@@ -1,47 +1,21 @@
-
 var infoDiv = document.getElementById('info');
 
-let map = L.map('map').setView([25.034189838257852, 121.56451743512416], 13);
+const map = L.map('map').setView([34.65127663010445, 135.50843439999946], 16);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([25.033964, 121.564468]).addTo(map)
-                .bindPopup('這裡是台北101!');
-                //.openPopup();
+const marker = L.marker([34.65127663010445, 135.50843439999946]).addTo(map)
+    .bindPopup('可樂餅長眠於此');
 
-var marker2 = L.marker([25.02628220891764, 121.52756985187678]).addTo(map)
-                .bindPopup('這裡是鼠大!');
-                //.openPopup();
-
-var marker3 = L.marker([25.02714161382132, 121.52625727322243]).addTo(map)
-                .bindPopup('這裡是和平大苑!');
-                //.openPopup();
-
-
-marker.on('click', function () {
-    console.log("Click 1");
-    infoDiv.textContent = "101鼠多";
-    //infoDiv.textContent = '你點擊了: 台北 101 ';
-    map.panTo([25.033964, 121.564468]); // 平移到台北 101
+map.on('click', () => {
+    const description = document.getElementById('description');
+    description.style.display = 'block';
+    description.scrollIntoView({ behavior: 'smooth' });
 });
 
-marker2.on('click', function () {
-    console.log("Click 2");
-    infoDiv.textContent = "鼠大大鼠";
-    //infoDiv.textContent = '你點擊了: 台北 101 ';
-    map.panTo([25.02628220891764, 121.52756985187678]); // 平移到台北 101
-});
-
-marker3.on('click', function () {
-    console.log("Click 3");
-    infoDiv.textContent = "和平大苑鼠晝伏夜出";
-    //infoDiv.textContent = '你點擊了: 台北 101 ';
-    map.panTo([25.08365587103092, 121.55747698890538]); // 平移到台北 101
-});
-
-function goPage(){
-    window.location.href = "https://mira-ar.n010.app/show/foX62j";
+function goPage() {
+    window.location.href = "https://mira-ar.n010.app/show/l2baMZ";
 }
